@@ -11,6 +11,12 @@ VAR_GLOBAL
 	fbSA_Power	: MC_Power;
 	fbSA_Home	: MC_Home;
 	fbSA_Jog	: MC_Jog;
+	fbSA_MovVel1 : MC_MoveVelocity;
+	fbSA_MovVel2 : MC_MoveVelocity;
+	fbSA_MovRel1 : MC_MoveRelative;
+	fbSA_MovRel2 : MC_MoveRelative;
+	fbSA_MovAbs1 : MC_MoveAbsolute;
+	fbSA_MovAbs2 : MC_MoveAbsolute;
 	
 	//	input: Command
 	bSA_ResetExe		: BOOL;
@@ -25,6 +31,13 @@ VAR_GLOBAL
 	bSA_JogFwd			: BOOL;
 	bSA_JogRev			: BOOL;
 	
+	stSA_VelCmd1			: ST_MC_CMD;
+	stSA_VelCmd2			: ST_MC_CMD;
+	stSA_RelCmd1			: ST_MC_CMD;
+	stSA_RelCmd2			: ST_MC_CMD;
+	stSA_AbsCmd1 			: ST_MC_CMD;
+	stSA_AbsCmd2			: ST_MC_CMD;
+	
 	//Variable PArameters
 	lrSA_PowerOverride	:LREAL;
 	lrSA_HomePosition	:LREAL;
@@ -38,6 +51,13 @@ VAR_GLOBAL
 	stSA_Home			: ST_MC_Status;
 	stSA_SetPosition	: ST_MC_Status;
 	stSA_Jog			: ST_MC_Status;
+	
+	stSA_VelSts1		: ST_MC_Status;
+	stSA_VelSts2		: ST_MC_Status;
+	stSA_RelSts1		: ST_MC_Status;
+	stSA_RelSts2		: ST_MC_Status;
+	stSA_AbsSts1		: ST_MC_Status;
+	stSA_AbsSts2		: ST_MC_Status;
 	
 END_VAR]]></Declaration>
   </GVL>
